@@ -127,9 +127,9 @@
 
 
   <script type="module">
-    import * as pdfjsLib from '/lib/pdfjs/pdf.min.mjs';
+    import * as pdfjsLib from './lib/pdfjs/pdf.min.mjs';
 
-    pdfjsLib.GlobalWorkerOptions.workerSrc = '/lib/pdfjs/pdf.worker.min.mjs';
+    pdfjsLib.GlobalWorkerOptions.workerSrc = './lib/pdfjs/pdf.worker.min.mjs';
 
     const params = new URLSearchParams(location.search);
     const relPath = params.get('path') || '';
